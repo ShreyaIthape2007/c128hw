@@ -40,10 +40,10 @@ for i in range(1,len(temp_list)):
     Star_names.append(temp_list[i][0])
     Distance.append(temp_list[i][5])
     Mass.append(temp_list[i][8])
-    if temp_list[i][9] == '':
+    if temp_list[i][8] == '':
         Radius.append('Not given')
     else:
-        Radius.append(temp_list[i][9])
+        Radius.append(temp_list[i][8])
 
     
 df2 = pd.DataFrame(list(zip(Star_names,Distance,Mass,Radius)),columns=['Star_name','Distance','Mass','Radius'])
